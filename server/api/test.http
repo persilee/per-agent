@@ -1,0 +1,17 @@
+@hostname = localhost
+@port = 3000
+@host = {{hostname}}:{{port}}
+@contentType = application/json
+
+### 测试 OpenAI 接口
+POST http://{{host}}/api/chat
+Content-Type: {{contentType}}
+
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "你好,请问你是谁？"
+    }
+  ]
+}
