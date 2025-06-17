@@ -2,9 +2,10 @@
 @port = 3000
 @host = {{hostname}}:{{port}}
 @contentType = application/json
+@deepseekApiKey = sk-xxxxx
 
 ### 测试 OpenAI 接口
-POST http://{{host}}/api/chat
+POST http://{{host}}/api/chat/openai
 Content-Type: {{contentType}}
 
 {
@@ -15,3 +16,36 @@ Content-Type: {{contentType}}
     }
   ]
 }
+
+### 测试 直接访问 Deepseek
+POST https://api.deepseek.com/v1/chat/completions
+Content-Type: {{contentType}}
+Authorization: Bearer {{deepseekApiKey}}
+
+{
+  "model": "deepseek-chat",
+  "messages": [
+    {
+      "role": "user",
+      "content": "你好,请问你是谁？"
+    }
+  ]
+}
+
+
+### 测试 Deepseek 接口
+POST http://{{host}}/api/chat/deepseek
+Content-Type: {{contentType}}
+
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "你好,请问你是谁？"
+    }
+  ]
+}
+
+### 测试 Deepseek 接口
+POST http://{{host}}/api/playground/tools
+Content-Type: {{contentType}}

@@ -5,5 +5,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     openaiApiKey: "",
     openaiBaseUrl: "",
+    deepseekApiKey: "",
+    deepseekBaseUrl: "",
   },
 })
