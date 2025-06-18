@@ -49,3 +49,11 @@ Content-Type: {{contentType}}
 ### 测试 Deepseek 接口
 POST http://{{host}}/api/playground/tools
 Content-Type: {{contentType}}
+
+### 测试 AI SDK Deepseek 接口
+POST http://{{host}}/api/chat/ai/deepseek
+Content-Type: {{contentType}}
+
+### 测试 AI SDK OpenAI 接口
+POST http://{{host}}/api/chat/ai/openai
+Content-Type: {{contentType}}
