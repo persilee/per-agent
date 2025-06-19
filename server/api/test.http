@@ -54,6 +54,14 @@ Content-Type: {{contentType}}
 POST http://{{host}}/api/chat/ai/deepseek
 Content-Type: {{contentType}}
 
+{
+  "industry": "互联网"
+}
+
 ### 测试 AI SDK OpenAI 接口
 POST http://{{host}}/api/chat/ai/openai
 Content-Type: {{contentType}}
+
+{
+  "content": "百度网站的创始人是谁？"
+}
