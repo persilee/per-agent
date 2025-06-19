@@ -63,5 +63,9 @@ POST http://{{host}}/api/chat/ai/openai
 Content-Type: {{contentType}}
 
 {
-  "content": "百度网站的创始人是谁？"
+  "content": "百度网站的地址是什么？"
 }
+
+### 测试 AI SDK OpenAI 接口
+POST http://{{host}}/api/playground/ai-object
+Content-Type: {{contentType}}

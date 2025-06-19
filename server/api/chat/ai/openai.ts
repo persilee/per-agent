@@ -9,6 +9,10 @@ export default defineEventHandler(async (event) => {
       model: openaiProvider('gpt-4o'),
       tools: { getWebsiteURL, getStartupFonderBio },
       prompt: content,
+      maxSteps: 2,
+      onStepFinish: (step) => {
+        console.log('Step finished:', step)
+      },
     })
 
     return response
