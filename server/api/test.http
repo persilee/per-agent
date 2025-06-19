@@ -69,3 +69,7 @@ Content-Type: {{contentType}}
 ### 测试 AI SDK OpenAI 接口
 POST http://{{host}}/api/playground/ai-object
 Content-Type: {{contentType}}
+
+### 测试 AI SDK OpenAI 数据流 接口
+POST http://{{host}}/api/playground/ai-stream
+Content-Type: {{contentType}}
