@@ -73,3 +73,11 @@ Content-Type: {{contentType}}
 ### 测试 AI SDK OpenAI 数据流 接口
 POST http://{{host}}/api/playground/ai-stream
 Content-Type: {{contentType}}
+
+### 测试 AI SDK OpenAI 相似度接口
+POST http://{{host}}/api/playground/ai-embeddingts
+Content-Type: {{contentType}}
+
+{
+  "query": "什么是人工智能？"
+}
