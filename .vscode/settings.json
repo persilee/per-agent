@@ -12,5 +12,6 @@
     "README.md": true,
     ".prettierrc": true,
     ".pnpm-debug.log": true
-  }
+  },
+  "cSpell.words": ["hnsw"]
 }

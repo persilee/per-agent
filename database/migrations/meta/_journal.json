@@ -15,6 +15,13 @@
       "when": 1750845913588,
       "tag": "0001_slim_sage",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1750930607219,
+      "tag": "0002_flowery_kingpin",
+      "breakpoints": true
     }
   ]
 }
