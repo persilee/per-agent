@@ -81,3 +81,14 @@ Content-Type: {{contentType}}
 {
   "query": "什么是人工智能？"
 }
+
+### 测试 AI SDK OpenAI 
+POST http://{{host}}/api/playground/ai-embeddings
+Content-Type: {{contentType}}
+
+{
+  "name": "人工智能",
+  "description": "人工智能是计算机科学的一个分支，旨在创建能够执行通常需要人类智能的任务的系统。",
+  "founder": "张三",
+  "revenue": 1000000.00
+}

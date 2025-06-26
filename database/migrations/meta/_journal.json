@@ -22,6 +22,27 @@
       "when": 1750930607219,
       "tag": "0002_flowery_kingpin",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1750932821943,
+      "tag": "0003_futuristic_payback",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1750934045006,
+      "tag": "0004_common_thunderbolts",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1750934134270,
+      "tag": "0005_lively_mantis",
+      "breakpoints": true
     }
   ]
 }

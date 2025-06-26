@@ -7,7 +7,7 @@ export const embeddings = pgTable(
     id: varchar('id', { length: 191 })
       .primaryKey()
       .$defaultFn(() => nanoid()),
-    content: text('content').notNull(),
+    description: text('description').notNull(),
     embedding: vector('embedding', { dimensions: 1536 }).notNull(),
     startupId: varchar('startup_id', { length: 191 }).references(() => startups.id, {
       onDelete: 'cascade',
