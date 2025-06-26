@@ -1,5 +1,6 @@
 import { tool } from 'ai'
 import { z } from 'zod'
+import { findRelevantContent } from './ai-rag'
 
 export const getWebsiteURL = tool({
   description: '获取网站的URL地址',
@@ -55,5 +56,17 @@ export const askForConfirmation = tool({
       confirmed: true,
       message: `用户已确认：${question}`,
     }
+  },
+})
+
+export const getInformation = tool({
+  description: '从你的知识库中获取信息以回答问题',
+  parameters: z.object({
+    startup: z.string().describe('需要回答的问题'),
+  }),
+  execute: async ({ startup }) => {
+    // 模拟获取创业公司信息的操作
+    console.log('Getting information for:', startup)
+    return findRelevantContent(startup)
   },
 })
