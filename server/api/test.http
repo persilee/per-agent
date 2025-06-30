@@ -108,3 +108,19 @@ Content-Type: {{contentType}}
 {
   "input": "我恨你"
 }
+
+### 测试 AI SDK OpenAI 
+POST http://{{host}}/api/playground/ai-evaluator-optimizer-workflow
+Content-Type: {{contentType}}
+
+{
+  "input": "我想创办一家初创公司"
+}
+
+### 测试 AI SDK OpenAI 
+POST http://{{host}}/api/playground/ai-orchestrator-workers-workflow
+Content-Type: {{contentType}}
+
+{
+  "input": "写一遍关于产品经理的工作职责"
+}
