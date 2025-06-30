@@ -92,3 +92,19 @@ Content-Type: {{contentType}}
   "founder": "张三",
   "revenue": 1000000.00
 }
+
+### 测试 AI SDK OpenAI 
+POST http://{{host}}/api/playground/chaining-workflow
+Content-Type: {{contentType}}
+
+### 测试 AI SDK OpenAI 
+POST http://{{host}}/api/playground/ai-routing-workflow
+Content-Type: {{contentType}}
+
+### 测试 AI SDK OpenAI 
+POST http://{{host}}/api/playground/ai-paralization-workflow
+Content-Type: {{contentType}}
+
+{
+  "input": "我恨你"
+}
