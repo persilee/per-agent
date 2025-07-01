@@ -1,10 +1,13 @@
 import { generateText } from 'ai'
-import { mvpGeneratorPrompt } from '~/server/utils/ai-prompt-engineering'
+import {
+  mvpGeneratorPrompt,
+  startupIdeaGeneratorPrompt,
+} from '~/server/utils/ai-prompt-engineering'
 
 export default defineEventHandler(async (event) => {
-  const { audience, problem } = await readBody(event)
+  const { industry, criteria } = await readBody(event)
 
-  const prompt = mvpGeneratorPrompt({ audience, problem })
+  const prompt = startupIdeaGeneratorPrompt({ industry, criteria })
 
   console.log('Generated Prompt:', prompt)
 
@@ -23,5 +26,11 @@ export default defineEventHandler(async (event) => {
     ],
   })
 
-  return response.messages[0]
+  const messageContent = response.messages[0].content[0] as any
+  const text =
+    messageContent.type === 'text' ? messageContent.text : messageContent.text.content
+
+  console.log('AI Response:', text)
+
+  return text
 })
