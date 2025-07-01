@@ -124,3 +124,12 @@ Content-Type: {{contentType}}
 {
   "input": "写一遍关于产品经理的工作职责"
 }
+
+### 测试 AI SDK OpenAI 
+POST http://{{host}}/api/playground/ai-prompt-engineering
+Content-Type: {{contentType}}
+
+{
+  "audience": "创始人",
+  "problem": "创始人需要一种工具来帮助他们寻找投资者。"
+}
